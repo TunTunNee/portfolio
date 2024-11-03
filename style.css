@@ -1,0 +1,443 @@
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0; 
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1; 
+    }
+}
+
+*{
+    background: rgb(10, 10, 10);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header{
+    height: 96px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    animation: slideIn 0.5s ease-in forwards;
+    z-index: 1000;
+   
+
+    .name{
+
+        h3{
+            color: #C7C7C7;
+            font-size: 30px;
+            font-weight: 400;
+            margin-left: 40px;
+        }
+
+    }
+
+    .hamburger {
+        display: none;
+        cursor: pointer; 
+        color: #C7C7C7;
+        width: 150px;
+        z-index: 100;
+    }
+ 
+    .links{
+            
+        a{
+            color: #C7C7C7;
+            text-decoration: none;
+            margin-right: 40px;
+        }
+    }
+}
+
+.body{
+    display: flex;
+    justify-content: space-between;
+    margin: 220px 100px;
+    animation: slideIn 0.5s ease-in forwards;
+
+    .wordings{
+
+        h1{
+            color: #FFFFFF;
+            font-size: 60px;
+            font-weight: 600;
+            margin: 0px;
+            margin-top: 25px;
+        }
+
+
+    }
+
+    .side{
+
+        h4{
+            font-size: 22px;
+            line-height: 30px;
+            font-weight: 545;
+            color: #FFFFFF;
+            margin-bottom: -3px;
+        }
+
+        p{
+            line-height: 25px;
+            color: #C7C7C7;
+        }
+
+        .bar{
+            display: inline-block;
+
+            .cont{
+                background-color: #D3E97A;
+                border: none;
+                width: 187px;
+                height: 54px;
+                border-radius: 50px;
+                font-size: 14px;
+                font-weight: 700;
+                margin-top: 20px;
+    
+                img{
+                    margin-left: 30px;
+                    width: 7px;
+                }
+            }
+        }
+
+        button{
+            border: none;
+            height: 50px;
+            width: 50px;
+            background-color: #222222;
+            border-radius: 50%;
+
+            img{
+                width: 20px;
+            }
+        }
+
+        .navs{
+            display: inline-block;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+    }
+}
+
+.second{
+    margin: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img{
+        border-radius: 20px;
+        width: 500px;
+    }
+
+    .capas{
+        margin-top: -50px;
+
+        h2{
+            color: #FFFFFF;
+            font-size: 50px;
+            font-weight: 500;
+        }
+
+        p{
+            line-height: 25px;
+            color: #C7C7C7;
+        }
+
+        .sacs{
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;          
+
+            div{
+                margin-top: 20px;
+                color: #FFFFFF;
+                margin-right: 10px;
+                border: 1px solid #C7C7C7;
+                border-radius: 20px;
+                width: 150px;
+                height: 50px;
+
+                p{
+                    color: #FFFFFF;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.demarc{
+    border-bottom: 1px solid #484848;
+}
+
+.feat{
+    margin: 100px;
+
+    h2{
+        color: #FFFFFF;
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    p{
+        line-height: 25px;
+        color: #C7C7C7;
+        margin-top: -20px;
+    }
+
+    .post{
+        margin-top: 80px;
+
+        .cards{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 80px;
+
+            h4{
+                font-size: 22px;
+                line-height: 30px;
+                font-weight: 545;
+                color: #FFFFFF;
+        
+            } 
+
+            .lay{
+                width: 320px;
+                background-color: #1A1A1A;
+                height: 300px;
+                border-radius: 10px;
+                text-align: center;
+                
+                img{
+                    width: 250px;
+                    border-radius: 10px;
+                    border: 2px solid #000000;
+                    margin-top: 60px;
+                    
+                }
+            }
+
+            .yards{
+
+
+                .line{
+                    border-bottom: 1px solid #484848;
+                }
+
+                #space{
+                    margin-top: 10px;
+                }
+            }
+
+            
+        }
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px;
+
+    .member{
+        margin-top: -100px;
+
+        h2{
+            color: #FFFFFF;
+            font-size: 40px;
+            font-weight: 500;
+        }
+
+        p{
+            color: #C7C7C7;
+
+            a{
+                color: #C7C7C7;
+                text-decoration-color: #D3E97A;
+            }
+        }
+
+        button{
+            background-color: rgb(10, 10, 10);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .dain{
+            margin-top: 200px;
+        }
+
+    }
+
+    .calas{
+        margin-top: -50px;
+        p{
+            color: #C7C7C7;
+            margin-bottom: 5px;
+        }
+
+        input{
+            width: 450px;
+            height: 35px;
+            border: none;
+            background-color: #1A1A1A;
+        }
+
+        textarea{
+            width: 450px;
+            height: 120px;
+            border: none;
+            background-color: #1A1A1A;
+        }
+
+        button{
+            width: 150px;
+            height: 54px;
+            background-color: #D3E97A;
+            border-radius: 50px;
+            border: none;
+            margin-top: 30px;
+            color: #0A0A0A;
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; 
+        height: auto; 
+        padding: 10px; 
+    }
+
+    .name h3 {
+        font-size: 24px; 
+        margin-left: 0; 
+        text-align: center; 
+    }
+
+    .hamburger {
+        display: block;
+        z-index: 1000;
+         
+    }
+
+    .links {
+        display: none;
+        flex-direction: column; 
+        position: absolute; 
+        top: 70px; 
+        right: 0; 
+        background-color: rgb(10, 10, 10); 
+        width: 100%;
+        z-index: 1; 
+       
+    }
+
+    .links a {
+        padding: 10px 20px; 
+        text-align: center; 
+        border-bottom: 1px solid #484848;
+    }
+
+    .links.active{
+        display: flex;
+        
+    }
+
+    .body {
+        flex-direction: column; 
+        margin: 20px 10px; 
+        animation: slideIn 0.5s ease-in forwards; 
+    }
+
+    .wordings{
+        margin-top: 100px;
+    }
+
+    .wordings h1 {
+        font-size: 36px; 
+        text-align: center;
+        margin-top: 0; 
+    }
+
+    .side {
+        text-align: center; 
+    }
+
+    .second {
+        flex-direction: column; 
+        margin: 20px; 
+    }
+
+    .second img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .capas {
+        margin-top: 20px; 
+    }
+
+    .sacs {
+        grid-template-columns: 1fr; 
+        margin-top: 20px; 
+    }
+
+    .feat {
+        margin: 20px; 
+    }
+
+    .post {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .cards {
+        flex-direction: column; 
+        margin-bottom: 20px; 
+        width: 100%; 
+    }
+
+    .yards, .lay {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    .footer {
+        flex-direction: column; 
+        align-items: center; 
+        margin: 20px; 
+    }
+
+    .calas {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    .calas input, .calas textarea {
+        width: calc(100% - 20px); 
+        margin: 10px 0; 
+    }
+
+    .calas button {
+        width: 100%; 
+    }
+}
